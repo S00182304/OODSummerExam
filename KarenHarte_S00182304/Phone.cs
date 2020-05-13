@@ -14,6 +14,9 @@ namespace KarenHarte_S00182304
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
 
-
+        public void IncreasePrice(int percentageValue)
+        {
+            _ = percentageValue / 100 * Price;
+        }
     }
 }

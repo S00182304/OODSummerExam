@@ -25,15 +25,24 @@ namespace KarenHarte_S00182304
         {
             //Loading the phone details
             Phone p1 = new Phone("Samsung S20", 500, "Android", "/images/android.png", "/images/s20.jpg");
-            Phone p2 = new Phone("iPhone", 600, "IOS", "/images/apple.png", "/images/iphone11.jpg");
+            Phone p2 = new Phone("iPhone", 600, "IOS", "/images/apple.png", "/images/iphone11.png");
 
             //Adding the phone details
             List<Phone> phoneList = new List<Phone>();
             phoneList.Add(p1);
-            phoneList.Add(p1);
+            phoneList.Add(p2);
 
             //Populating them to the list box
             PhoneDetailsLB.ItemsSource = phoneList;
+        }
+
+        private void PhoneDetailsLB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //Get the selected item
+            Phone selectedPhone = PhoneDetailsLB.SelectedItem as Phone;
+
+            //Display
+            PriceTBx.Text = selectedPhone.Price.ToString("C");
         }
     }
 }

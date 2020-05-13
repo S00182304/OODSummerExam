@@ -6,9 +6,22 @@
         xmlns:local="clr-namespace:KarenHarte_S00182304"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Key="PhoneDetailsTemplate">
+            <StackPanel>
+                <Image Source="{Binding OS_Image}" Width="75"/>
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" FontSize="12"/>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+        
+    </Window.Resources>
     <Grid>
-        <ListBox x:Name="PhoneDetailsLB"  Margin="57,75,457.6,65"/>
-        <TextBlock Margin="488,75,63.6,290"/>
-        <Image Margin="488,151,63.6,65"/>
+        
+        <ListBox x:Name="PhoneDetailsLB"  Margin="57,75,457.6,65" SelectionChanged="PhoneDetailsLB_SelectionChanged" ItemTemplate="{StaticResource PhoneDetailsTemplate}"/>
+        
+        <TextBlock x:Name="PriceTBx" Margin="488,75,63.6,290"/>
+        <Image x:Name="PhoneImageBox" Margin="488,151,63.6,65"/>
     </Grid>
 </Window>

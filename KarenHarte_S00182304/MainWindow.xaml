@@ -22,6 +22,6 @@
         <ListBox x:Name="PhoneDetailsLB"  Margin="57,75,457.6,65" SelectionChanged="PhoneDetailsLB_SelectionChanged" ItemTemplate="{StaticResource PhoneDetailsTemplate}"/>
         
         <TextBlock x:Name="PriceTBx" Margin="488,75,63.6,290"/>
-        <Image x:Name="PhoneImageBox" Margin="488,151,63.6,65"/>
+        <Image x:Name="PhoneImageBox" Margin="488,151,63.6,65" Source="{Binding Path = Phone_Image}"/>
     </Grid>
 </Window>

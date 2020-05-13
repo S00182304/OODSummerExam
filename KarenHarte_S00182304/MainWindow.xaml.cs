@@ -41,8 +41,10 @@ namespace KarenHarte_S00182304
             //Get the selected item
             Phone selectedPhone = PhoneDetailsLB.SelectedItem as Phone;
 
-            //Display
+            //Display Price
             PriceTBx.Text = selectedPhone.Price.ToString("C");
+
+            //PhoneImageBox.Source = selectedPhone.Phone_Image.To;
         }
     }
 }

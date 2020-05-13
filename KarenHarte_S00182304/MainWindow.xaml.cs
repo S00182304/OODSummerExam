@@ -21,6 +21,13 @@ namespace KarenHarte_S00182304
         {
             InitializeComponent();
         }
-        
+
+
+            
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Phone p1 = new Phone("Samsung S20", 500, "Android", "/images/android.png", "/images/s20.jpg");
+            Phone p2 = new Phone("iPhone", 600, "IOS", "/images/apple.png", "/images/iphone11.jpg");
+        }
     }
 }

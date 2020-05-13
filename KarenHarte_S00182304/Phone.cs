@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace KarenHarte_S00182304
 {
-    class Phone
+    public class Phone
     {
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public string OperatingSystem { get; set; }
+        public string OS_Image { get; set; }
+        public string Phone_Image { get; set; }
+
+
     }
 }

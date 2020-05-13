@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <ListBox x:Name="PhoneDetailsLB"  Margin="57,75,457.6,65"/>
+        <TextBlock Margin="488,75,63.6,290"/>
+        <Image Margin="488,151,63.6,65"/>
     </Grid>
 </Window>

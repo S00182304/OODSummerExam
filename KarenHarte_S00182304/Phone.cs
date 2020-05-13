@@ -16,7 +16,7 @@ namespace KarenHarte_S00182304
 
         public void IncreasePrice(int percentageValue)
         {
-            _ = percentageValue / 100 * Price;
+            Price = percentageValue / 100 * Price;
         }
     }
 }
